@@ -1,7 +1,6 @@
 .header {
   background-color: #000;
   color: #fff;
-  border: 1px solid blue;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid yellow;
   margin-block: auto;
   height: 100%;
 }
@@ -57,15 +55,26 @@
 }
 
 .menuItem {
-  font-size: clamp(0.75rem, 0.592rem + 0.702vi, 1.25rem);
+  font-size: clamp(1rem, 0.743rem + 0.541vi, 1.25rem);
 }
 
 @media (max-width: 768px) {
   .menu {
     position: absolute;
     top: 0;
-    left: -10rem;
-    width: 10rem;
+    left: -15rem;
+    width: 15rem;
+    background-color: #585858;
+    height: 16rem;
+    transition: 0.4s;
+  }
+
+  .menuItems {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
   }
 
   .active {

@@ -33,7 +33,7 @@ export const Header = () => {
             </div>
           </div>
         </Link>
-        <nav className={styles.menu}>
+        <nav className={`${styles.menu} ${isMobileOpen ? styles.active : ""}`}>
           <ul className={styles.menuItems}>
             <li>
               <Link href="/" className={styles.menuItem}>

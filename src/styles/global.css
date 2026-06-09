@@ -46,11 +46,10 @@ body {
 main {
   flex: 1;
   overflow: auto;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .container {
   width: min(93.75rem, 90%);
   margin: 0 auto 3rem;
-  border: 1px solid red;
 }
