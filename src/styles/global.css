@@ -53,3 +53,35 @@ main {
   width: min(93.75rem, 90%);
   margin: 0 auto 3rem;
 }
+
+section {
+  margin-bottom: 3rem;
+}
+
+main section:first-of-type {
+  padding-top: clamp(2rem, 1.571rem + 1.905vi, 3rem);
+}
+
+.sectionTitle {
+  font-size: clamp(1.125rem, 0.857rem + 1.19vi, 1.75rem);
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  margin-bottom: clamp(1.5rem, 1.071rem + 1.905vi, 2.5rem);
+}
+
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  width: clamp(4rem, 1.214rem + 12.381vi, 10.5rem);
+  height: 1px;
+  background: rgb(216, 97, 60);
+}
+
+p {
+  font-size: clamp(0.875rem, 0.768rem + 0.476vi, 1.125rem);
+  line-height: 1.3;
+}
