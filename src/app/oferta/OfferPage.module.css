@@ -1,0 +1,48 @@
+.text {
+  margin-bottom: clamp(0.75rem, 0.643rem + 0.476vi, 1rem);
+}
+
+.contentBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textBox {
+  width: 47%;
+}
+
+.img {
+  width: 47%;
+  min-height: 28.125rem;
+  max-height: 30rem;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: clamp(1rem, 0.571rem + 1.905vi, 2rem);
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.875rem, 0.768rem + 0.476vi, 1.125rem);
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .contentBox {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .textBox {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    min-height: 18.75rem;
+    max-height: 320px;
+  }
+}

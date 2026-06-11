@@ -1,0 +1,55 @@
+.contentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textBox {
+  width: 50%;
+  max-width: 31.25rem;
+}
+
+.map {
+  width: 50%;
+  min-height: 28.125rem;
+  max-height: 30rem;
+  max-width: 31.25rem;
+}
+
+.contactInfoBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contactInfoBox a {
+  font-size: clamp(0.875rem, 0.768rem + 0.476vi, 1.125rem);
+  line-height: 1.3;
+}
+
+.companyName {
+  font-size: clamp(1.125rem, 1.018rem + 0.476vi, 1.375rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .contentBox {
+    flex-direction: column;
+  }
+
+  .textBox {
+    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  .contactInfoBox {
+  }
+  .map {
+    width: 100%;
+    max-width: 100%;
+  }
+}

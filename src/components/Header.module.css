@@ -67,7 +67,10 @@
     top: 0;
     left: -15rem;
     width: 15rem;
-    background-color: #585858;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
+
     height: 16rem;
     transition: 0.4s;
   }
