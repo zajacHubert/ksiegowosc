@@ -38,7 +38,7 @@ export default function Home() {
                 <span className={styles.bold}>
                   Bezpieczeństwo i zgodność z przepisami
                 </span>{" "}
-                - Dbamy o prawidłowość rozliczeń oraz ochronę Twoich danych na
+                - dbamy o prawidłowość rozliczeń oraz ochronę Twoich danych na
                 każdym etapie współpracy.
               </li>
             </ul>
