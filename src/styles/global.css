@@ -63,7 +63,7 @@ main section:first-of-type {
 }
 
 .sectionTitle {
-  font-size: clamp(1.125rem, 0.857rem + 1.19vi, 1.75rem);
+  font-size: clamp(1.25rem, 1.036rem + 0.952vi, 1.75rem);
   font-weight: 700;
   text-align: center;
   position: relative;
