@@ -1,6 +1,16 @@
 import ContactForm from "@/components/ContactForm";
 import styles from "./ContactPage.module.css";
 import { FaLocationDot, FaPhone, FaEnvelope, FaIdCard } from "react-icons/fa6";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kontakt – Biuro Rachunkowe Sierpc",
+  description:
+    "Skontaktuj się z biurem rachunkowym Anna Niemczewska w Sierpcu. Adres: Rachocin 8A, 09-200 Sierpc. Tel: +48 726 221 610. Formularz kontaktowy online.",
+  alternates: {
+    canonical: "https://biurorachunkowe-niemczewska.pl/kontakt",
+  },
+};
 
 export default function ContactPage() {
   return (

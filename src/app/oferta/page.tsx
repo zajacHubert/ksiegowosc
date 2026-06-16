@@ -3,6 +3,16 @@ import styles from "./OfferPage.module.css";
 import offer1Img from "../../../public/offer1.jpg";
 import offer2Img from "../../../public/offer2.jpg";
 import offer3Img from "../../../public/offer3.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Oferta – Usługi Księgowe i Kadrowe w Sierpcu",
+  description:
+    "Pełna obsługa księgowa, kadrowo-płacowa i obsługa przedsiębiorców w Sierpcu. Prowadzenie ksiąg handlowych, KPiR, rozliczenia ZUS, deklaracje VAT, PIT, CIT.",
+  alternates: {
+    canonical: "https://biurorachunkowe-niemczewska.pl/oferta",
+  },
+};
 
 export default function OfferPage() {
   return (

@@ -2,6 +2,17 @@ import Image from "next/image";
 import styles from "./HomePage.module.css";
 import heroImg from "../../public/hero.jpg";
 import aboutImg from "../../public/about.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Biuro Rachunkowe Sierpc | Anna Niemczewska – Usługi Księgowe i Kadrowe",
+  description:
+    "Profesjonalne biuro rachunkowe w Sierpcu i okolicach. Kompleksowa obsługa księgowa, kadrowo-płacowa i podatkowa dla firm. Anna Niemczewska, Rachocin k. Sierpca.",
+  alternates: {
+    canonical: "https://biurorachunkowe-niemczewska.pl",
+  },
+};
 
 export default function Home() {
   return (
