@@ -7,14 +7,14 @@ import Script from "next/script";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "700"],
   variable: "--font-montserrat",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -98,6 +98,7 @@ export default function RootLayout({
     <html lang="pl" className={`${inter.variable} ${montserrat.variable}`}>
       <head>
         <Script
+          strategy="lazyOnload"
           id="local-business-jsonld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
