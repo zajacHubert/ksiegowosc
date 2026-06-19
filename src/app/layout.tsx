@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.jpeg",
+    icon: "/favicon.ico",
   },
 };
 
