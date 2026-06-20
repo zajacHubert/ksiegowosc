@@ -3,12 +3,10 @@ import { Inter } from "next/font/google";
 import "../styles/global.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -50,7 +48,10 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
   },
 };
 
@@ -90,17 +91,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${inter.variable}`}>
-      <head>
-        <Script
-          strategy="lazyOnload"
-          id="local-business-jsonld"
+      <body>
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessJsonLd),
           }}
         />
-      </head>
-      <body>
         <Header />
         <main>{children}</main>
         <Footer />
